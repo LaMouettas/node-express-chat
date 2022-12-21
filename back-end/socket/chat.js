@@ -10,8 +10,9 @@ module.exports = function (io) {
       io.emit('notification', { type: 'removed_user', data: socket.id });
     });
 
-    socket.on('...', (msg) => {
-
+    socket.on('all', (message) => {
+      console.log('message', message);
+      io.emit('notification', { type: 'new_message', data: message });
     });
   })
 }

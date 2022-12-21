@@ -149,7 +149,7 @@ b {
   padding: 14px;
   position: relative;
 }
-.window-title > .title {
+.window-title > .title-container {
   overflow: hidden;
   text-align: center;
   font-weight: bold;
@@ -293,6 +293,8 @@ b {
   color: #5d7185;
   font-weight: bold;
   line-height: 20px;
+  /* word break */
+  word-wrap: break-word;
 }
 .chat-area ul .message {
   padding: 14px;
